@@ -2,8 +2,8 @@
   import { page } from '$app/stores';
   import { Navbar } from '$lib/components/navbar';
   import { Container } from '$lib/components/layout';
-  import '../assets/sass/minireset.sass';
-  import '../assets/sass/global.sass';
+  import '../sass/minireset.sass';
+  import '../sass/global.sass';
 
   $: isHome = $page.url.pathname == '/';
 </script>

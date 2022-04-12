@@ -13,13 +13,15 @@
 </header>
 
 <style lang="sass">
+  @import '../../../sass/variables'
+
   .navbar
     position: relative
     display: flex
     justify-content: center
     align-items: center
     height: 54px
-    background-color: #ffbd14
+    background-color: $primary
     font-size: 23px
     font-weight: 700
 </style>
