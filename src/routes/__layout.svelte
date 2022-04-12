@@ -8,7 +8,7 @@
   $: isHome = $page.url.pathname == '/';
 </script>
 
-<Navbar showHomeButton={!isHome} />
+<Navbar showHomeButton={!isHome}>SEVN NEWS</Navbar>
 <Container isNarrow={!isHome}>
   <slot />
 </Container>
