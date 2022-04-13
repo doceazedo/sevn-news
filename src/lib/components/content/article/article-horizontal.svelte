@@ -26,6 +26,7 @@
     padding-left: 15px
     color: inherit
     text-decoration: none
+    transition: all .3s ease
     
     &::before
       @include category-colors
@@ -36,4 +37,7 @@
       height: 100%
       background-color: red
       border-radius: 25px
+
+    &:hover
+      transform: translateY(-.5rem)
 </style>

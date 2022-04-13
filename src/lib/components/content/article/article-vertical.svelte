@@ -22,6 +22,10 @@
     gap: .5rem
     color: inherit
     text-decoration: none
+    transition: all .3s ease
+
+    &:hover
+      transform: translateY(-.5rem)
 
     .thumbnail
       display: flex
@@ -41,6 +45,6 @@
         object-fit: cover
         transition: all .3s ease
 
-    &:not(:hover) img
-      transform: scale(1.1)
+        &:not(:hover)
+          transform: scale(1.1)
 </style>

@@ -24,4 +24,5 @@
     background-color: $primary
     font-size: 23px
     font-weight: 700
+    user-select: none
 </style>

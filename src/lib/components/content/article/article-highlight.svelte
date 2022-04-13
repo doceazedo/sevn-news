@@ -15,4 +15,8 @@
   .article
     color: inherit
     text-decoration: none
+    transition: all .3s ease
+
+    &:hover
+      transform: translateY(-.5rem)
 </style>

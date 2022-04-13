@@ -13,4 +13,5 @@
     font-size: 2rem
     font-weight: bold
     border-radius: 10px
+    user-select: none
 </style>
