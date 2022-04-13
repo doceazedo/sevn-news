@@ -1,4 +1,4 @@
-import type { Article, ArticleDetails } from '$lib/components/content/article';
+import type { Article, ArticleDetails } from '$lib/components/article';
 
 const baseUrl = 'https://apimock.sevn.technology/news';
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { CategoryColor } from '$lib/components/content/article';
+  import type { CategoryColor } from '$lib/components/article';
 
   export let color: CategoryColor;
 </script>

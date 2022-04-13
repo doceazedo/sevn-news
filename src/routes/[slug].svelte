@@ -1,6 +1,6 @@
 <script lang="ts" context="module">
   import { useArticle } from '$lib/modules/article/articles.store';
-  import type { ParsedArticle } from '$lib/components/content';
+  import type { ParsedArticle } from '$lib/components/article';
 
   export async function load({ params, fetch }) {
     const slug = params.slug.split('-');
@@ -30,7 +30,7 @@
     TextTitleWithLabel,
   } from '$lib/components/text';
   import { SpacerHeight } from '$lib/components/spacer';
-  import { AdPlaceholder } from '$lib/components/content';
+  import { AdPlaceholder } from '$lib/components/ad-placeholder';
 
   export let article: ParsedArticle;
 </script>

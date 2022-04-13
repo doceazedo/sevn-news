@@ -1,6 +1,6 @@
 import { categoryColors } from '.';
 import { getArticle, getHeadlines, getOtherArticles } from './articles.service';
-import type { ArticleDetails, Article } from '$lib/components/content/article';
+import type { ArticleDetails, Article } from '$lib/components/article';
 
 const getLink = (slug: string, id: number) => {
   if (slug == null || id == null) return;

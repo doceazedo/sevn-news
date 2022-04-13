@@ -1,6 +1,6 @@
 <script lang="ts">
   import { TextCategoryLabel, TextTitleLarge } from '.';
-  import type { CategoryColor } from '$lib/components/content/article';
+  import type { CategoryColor } from '$lib/components/article';
 
   export let color: CategoryColor, label: string;
 </script>

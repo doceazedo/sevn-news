@@ -16,7 +16,7 @@
 </a>
 
 <style lang="sass">
-  @import '../../../../sass/mixins'
+  @import '../../../sass/mixins'
   
   .article
     position: relative
