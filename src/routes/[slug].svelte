@@ -7,7 +7,6 @@
     const id = slug?.[slug.length - 1];
     const article = await useArticle(id);
 
-    console.log(article);
     if (article == null || article?.status)
       return {
         status: article?.status || 500,
