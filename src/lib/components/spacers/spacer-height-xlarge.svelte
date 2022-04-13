@@ -2,5 +2,5 @@
 
 <style lang="sass">
   div
-    margin: 5rem 0
+    height: 5rem
 </style>
