@@ -19,6 +19,7 @@
   @import '../../../sass/mixins'
   
   .article
+    @include category-bg-colors
     position: relative
     display: flex
     align-items: center
@@ -29,7 +30,6 @@
     transition: all .3s ease
     
     &::before
-      @include category-colors
       position: absolute
       left: 0
       content: ''
