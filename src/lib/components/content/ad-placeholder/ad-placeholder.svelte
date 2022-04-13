@@ -14,4 +14,8 @@
     font-weight: bold
     border-radius: 10px
     user-select: none
+
+    @media screen and (max-width: 768px)
+      height: 90px
+      font-size: 1.75rem
 </style>

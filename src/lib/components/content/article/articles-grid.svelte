@@ -20,4 +20,9 @@
     display: grid
     grid-template-columns: 2fr 1fr 1fr
     grid-column-gap: 1.25rem
+    grid-row-gap: 2rem
+
+  @media screen and (max-width: 768px)
+    .articles
+      grid-template-columns: 1fr
 </style>

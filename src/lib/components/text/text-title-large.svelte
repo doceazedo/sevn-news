@@ -7,4 +7,8 @@
     font-size: 3.75rem
     font-weight: 700
     line-height: 60px
+
+    @media screen and (max-width: 768px)
+      font-size: 2.25rem
+      line-height: 35px
 </style>

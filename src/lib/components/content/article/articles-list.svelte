@@ -17,4 +17,8 @@
     grid-template-columns: repeat(4, 1fr)
     grid-column-gap: 1.25rem
     grid-row-gap: 1.25rem
+
+    @media screen and (max-width: 768px)
+      grid-template-columns: 1fr
+      grid-row-gap: .75rem
 </style>
