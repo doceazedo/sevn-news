@@ -1,8 +1,8 @@
-<div class="publi-placeholder">Publicidade</div>
+<div class="placeholder">Publicidade</div>
 
 <style lang="sass">
-  // This class name is to dodge adblockers
-  .publi-placeholder
+  // This generic name is to dodge adblockers
+  .placeholder
     display: flex
     justify-content: center
     align-items: center

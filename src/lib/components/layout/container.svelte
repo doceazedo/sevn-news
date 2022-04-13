@@ -1,10 +1,35 @@
 <script lang="ts">
-  export let isNarrow = false;
+  import { fly } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
+
+  export let isNarrow = false,
+    url: string,
+    isHome: boolean;
+
+  const transition = {
+    duration: 300,
+    opacity: 0,
+    easing: quintOut,
+  };
 </script>
 
-<main class="container" class:is-narrow={isNarrow}>
-  <slot />
-</main>
+{#key url}
+  <main
+    class="container"
+    class:is-narrow={isNarrow}
+    in:fly={{
+      ...transition,
+      x: isHome ? 32 : -32,
+      delay: 500,
+    }}
+    out:fly={{
+      ...transition,
+      x: isHome ? -32 : 32,
+    }}
+  >
+    <slot />
+  </main>
+{/key}
 
 <style lang="sass">
   .container

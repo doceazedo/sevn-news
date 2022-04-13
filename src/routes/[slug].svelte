@@ -29,7 +29,7 @@
     TextTitleWithLabel,
   } from '$lib/components/text';
   import { SpacerHeight } from '$lib/components/spacer';
-  import { AdPlaceholder } from '$lib/components/ad-placeholder';
+  import { Placeholder } from '$lib/components/placeholder';
 
   export let article: ParsedArticle;
 </script>
@@ -52,7 +52,7 @@
 
 <SpacerHeight size={40} />
 
-<AdPlaceholder />
+<Placeholder />
 
 <SpacerHeight size={64} />
 

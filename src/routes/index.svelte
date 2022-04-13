@@ -1,9 +1,9 @@
 <script lang="ts">
   import { ArticlesFeatured } from '$lib/modules/article';
-  import { AdPlaceholder } from '$lib/components/ad-placeholder';
+  import { Placeholder } from '$lib/components/placeholder';
   import { SpacerHeight } from '$lib/components/spacer';
 </script>
 
-<AdPlaceholder />
+<Placeholder />
 <SpacerHeight size={85} />
 <ArticlesFeatured />
