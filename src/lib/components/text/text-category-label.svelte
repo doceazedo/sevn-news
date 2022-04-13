@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { CategoryColor } from '.';
+  import type { CategoryColor } from '$lib/components/content/article';
 
   export let color: CategoryColor;
 </script>
@@ -14,7 +14,7 @@
 </p>
 
 <style lang="sass">
-  @import '../../../../sass/mixins'
+  @import '../../../sass/mixins'
 
   .article-label
     @include category-colors

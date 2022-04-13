@@ -1,13 +1,14 @@
 <script lang="ts">
-  import { TextTitleLarge } from '$lib/components/text';
-  import { ArticleLabel } from '.';
+  import { TextCategoryLabel, TextTitleLarge } from '$lib/components/text';
   import type { ParsedArticle } from '.';
 
   export let article: ParsedArticle;
 </script>
 
 <a class="article" href={article.link}>
-  <ArticleLabel color={article.color}>{article.category}</ArticleLabel>
+  <TextCategoryLabel color={article.color}>
+    {article.category}
+  </TextCategoryLabel>
   <TextTitleLarge>{article.title}</TextTitleLarge>
 </a>
 

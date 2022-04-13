@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { TextTitleMedium } from '$lib/components/text';
-  import { ArticleLabel } from '.';
+  import { TextCategoryLabel, TextTitleMedium } from '$lib/components/text';
   import type { ParsedArticle } from '.';
 
   export let article: ParsedArticle;
@@ -10,7 +9,9 @@
   <figure class="thumbnail">
     <img src={article.poster} alt="" />
   </figure>
-  <ArticleLabel color={article.color}>{article.category}</ArticleLabel>
+  <TextCategoryLabel color={article.color}>
+    {article.category}
+  </TextCategoryLabel>
   <TextTitleMedium>{article.title}</TextTitleMedium>
 </a>
 
