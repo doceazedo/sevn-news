@@ -1,4 +1,4 @@
-import type { Article } from '$lib/components/content/article';
+import type { Article, ArticleDetails } from '$lib/components/content/article';
 
 const baseUrl = 'https://apimock.sevn.technology/news';
 
@@ -16,6 +16,6 @@ export const getOtherArticles = async () => {
 
 export const getArticle = async (id: number) => {
   const resp = await fetch(`${baseUrl}/articles/${id}`);
-  const data: Article = await resp.json();
+  const data: ArticleDetails = await resp.json();
   return data;
 };

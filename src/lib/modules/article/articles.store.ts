@@ -1,18 +1,21 @@
 import { categoryColors } from '.';
 import { getArticle, getHeadlines, getOtherArticles } from './articles.service';
-import type { Article } from '$lib/components/content/article';
+import type { ArticleDetails, Article } from '$lib/components/content/article';
+
+const parseArticle = (article: ArticleDetails) => ({
+  ...article,
+  link: `/${article.slug}`,
+  color: categoryColors[article.categoryId],
+});
 
 const parseArticles = (articles: Article[]) => {
-  return articles.map((article) => ({
-    ...article,
-    link: `/${article.slug}`,
-    color: categoryColors[article.categoryId],
-  }));
+  return articles.map((article) => parseArticle(article));
 };
 
 export const useArticle = async (id: number) => {
   const article = await getArticle(id);
-  return article;
+  const parsedArticle = parseArticle(article);
+  return parsedArticle;
 };
 
 export const useHeadlines = async () => {

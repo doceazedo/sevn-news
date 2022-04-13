@@ -11,7 +11,14 @@ export type Article = {
   title: string;
 };
 
+export type ArticleDetails = {
+  subtitle?: string;
+  article?: string;
+  status?: number;
+  message?: string;
+} & Article;
+
 export type ParsedArticle = {
   link: string;
   color: CategoryColor;
-} & Article;
+} & ArticleDetails;
