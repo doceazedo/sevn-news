@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { SpacerHeightLarge } from '$lib/components/spacers';
+  import { SpacerHeight } from '$lib/components/spacer';
   import { ArticlesGrid, ArticlesList } from '.';
 </script>
 
 <ArticlesGrid />
-<SpacerHeightLarge />
+<SpacerHeight size={70} />
 <ArticlesList />
