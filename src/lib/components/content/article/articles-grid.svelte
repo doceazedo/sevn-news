@@ -1,17 +1,18 @@
 <script lang="ts">
   import { ArticleHighlight, ArticleVertical } from '.';
+  import type { ParsedArticle } from './articles.types';
+
+  export let highlight: ParsedArticle, articles: ParsedArticle[];
 </script>
 
 <section class="articles">
-  <ArticleHighlight
-    title="Quem não tiver valores a receber nesta etapa poderá ter nas próximas fases, diz BC"
-  />
-  <ArticleVertical
-    title="Datafolha: Após ensino remoto, 76% precisam de reforço na alfabetização"
-  />
-  <ArticleVertical
-    title="Lotomania: com prêmio de R$ 5 milhões, veja os números sorteados hoje"
-  />
+  {#if highlight != null}
+    <ArticleHighlight article={highlight} />
+  {/if}
+
+  {#each articles as article}
+    <ArticleVertical {article} />
+  {/each}
 </section>
 
 <style lang="sass">

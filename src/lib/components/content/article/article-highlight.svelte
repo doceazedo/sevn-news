@@ -1,14 +1,14 @@
 <script lang="ts">
   import { TextTitleLarge } from '$lib/components/text';
   import { ArticleLabel } from '.';
+  import type { ParsedArticle } from '.';
 
-  export let title = '',
-    href = '';
+  export let article: ParsedArticle;
 </script>
 
-<a class="article" {href}>
-  <ArticleLabel color="red">Economia</ArticleLabel>
-  <TextTitleLarge>{title}</TextTitleLarge>
+<a class="article" href={article.link}>
+  <ArticleLabel color={article.color}>{article.category}</ArticleLabel>
+  <TextTitleLarge>{article.title}</TextTitleLarge>
 </a>
 
 <style lang="sass">

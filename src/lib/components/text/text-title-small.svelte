@@ -4,6 +4,6 @@
 
 <style lang="sass">
   h1
-    font-size: 1rem
+    font-size: 15px
     font-weight: 700
 </style>

@@ -1,18 +1,17 @@
 <script lang="ts">
   import { TextTitleMedium } from '$lib/components/text';
   import { ArticleLabel } from '.';
+  import type { ParsedArticle } from '.';
 
-  export let title = '',
-    href = '',
-    thumbnail = '/assets/img/thumbnail-placeholder.png'; // internet caiu, tô usando essa img por enquanto
+  export let article: ParsedArticle;
 </script>
 
-<a {href} class="article">
+<a href={article.link} class="article">
   <figure class="thumbnail">
-    <img src={thumbnail} alt="" />
+    <img src={article.poster} alt="" />
   </figure>
-  <ArticleLabel color="blue">Educação</ArticleLabel>
-  <TextTitleMedium>{title}</TextTitleMedium>
+  <ArticleLabel color={article.color}>{article.category}</ArticleLabel>
+  <TextTitleMedium>{article.title}</TextTitleMedium>
 </a>
 
 <style lang="sass">
@@ -31,6 +30,7 @@
       height: 190px
       margin-bottom: .5rem
       border-radius: 10px
+      background-color: #ebeff1
       overflow: hidden
 
       img
