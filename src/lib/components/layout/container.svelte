@@ -19,7 +19,7 @@
       width: min(100%, 980px)
       padding: 3rem 0
 
-  @media screen and (max-width: 768px)
+  @media screen and (max-width: 1180px)
     .container
       padding: 2rem
 
